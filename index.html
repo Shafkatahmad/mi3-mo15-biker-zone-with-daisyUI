@@ -30,5 +30,155 @@
         <li><a>Item 2</a></li>
       </ul>
     </details>
+
+    <br />
+
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn" onclick="my_modal_1.showModal()">
+      customized open modal
+    </button>
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold">Hi!</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <br />
+
+    <!-- swap component -->
+    <label class="swap swap-flip text-5xl">
+      <!-- this hidden checkbox controls the state -->
+      <input type="checkbox" />
+
+      <div class="swap-on">😈</div>
+      <div class="swap-off">😇</div>
+    </label>
+
+    <br />
+
+    <!-- accordion -->
+    <div class="collapse bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title font-semibold">Is This A Good Product?</div>
+      <div class="collapse-content text-sm">
+        Yes! Served And Verified by Millions Of Users Around The World.
+      </div>
+    </div>
+    <div class="collapse bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title font-semibold">
+        I forgot my password. What should I do?
+      </div>
+      <div class="collapse-content text-sm">
+        Click on "Forgot Password" on the login page and follow the instructions
+        sent to your email.
+      </div>
+    </div>
+    <div class="collapse bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title font-semibold">
+        How do I update my profile information?
+      </div>
+      <div class="collapse-content text-sm">
+        Go to "My Account" settings and select "Edit Profile" to make changes.
+      </div>
+    </div>
+
+    <br />
+
+    <!-- avatar -->
+    <div class="avatar">
+      <div class="w-24 rounded">
+        <img
+          src="https://img.daisyui.com/images/profile/demo/batperson@192.webp"
+        />
+      </div>
+    </div>
+    <br />
+
+    <!-- card -->
+    <div class="card bg-base-100 w-96 shadow-sm">
+      <figure>
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          alt="Shoes"
+        />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">
+          Card Title
+          <div class="badge badge-secondary">NEW</div>
+        </h2>
+        <p>
+          A card component has a figure, a body part, and inside body there are
+          title and actions parts
+        </p>
+        <div class="card-actions justify-end">
+          <div class="badge badge-outline">Fashion</div>
+          <div class="badge badge-outline">Products</div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- carousel -->
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+          class="w-full"
+        />
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+        >
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
