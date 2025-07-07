@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DaisyUI test</title>
+    <title>DaisyUI Test</title>
+    <!-- DaisyUI  + Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body></body>
+  <body>
+    <h1>Hi, I am using DaisyUI</h1>
+    <button class="btn">Click Me</button>
+    <button class="btn btn-primary">Click Me</button>
+    <br />
+    <button class="btn btn-error">Click Me</button>
+
+    <br />
+
+    <details class="dropdown bg-red-200">
+      <summary class="btn m-1">open or close</summary>
+      <ul
+        class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+      >
+        <li><a>Item 1</a></li>
+        <li><a>Item 2</a></li>
+      </ul>
+    </details>
+  </body>
 </html>
